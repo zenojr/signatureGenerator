@@ -7,7 +7,7 @@
                        animationDuration = "200ms" 
                        color = "accent" 
                        backgroundColor = "primary">
-            <mat-tab label = "Assinatura"> 
+            <mat-tab label = "Criar Assinatura"> 
                 <ng-template mat-tab-label>
                     <svg xmlns   = "http://www.w3.org/2000/svg" 
                          width   = "24" 
@@ -19,9 +19,28 @@
                 </ng-template> 
                 <div class = "itens">
                     <mat-card class="signature-card">
-                        
-
-
+                        <mat-grid-list cols="4" rowHeight="4:3">
+                            <mat-grid-tile colspan="2" rowspan="2">
+                                <div class="logoSignature">
+                                    <img src="../../assets/img/logoCorfioAssinatura.png" alt="">
+                                </div>
+                            </mat-grid-tile>
+                            <div class="text-data">
+                                <mat-grid-tile colspan="2" rowspan="1">
+                                    <div class="signature">
+                                        <h3>Zeno França Jr.</h3>
+                                        <span>Desenvolvedor Web</span>
+                                    </div>
+                                </mat-grid-tile>
+        
+                                <mat-grid-tile colspan="2" rowspan="1">
+                                    <div class="contact">
+                                        <p id="phone">+55 48 99662 6925</p>
+                                        <p>www.corfio.com.br</p>
+                                    </div>
+                                </mat-grid-tile>
+                            </div>                            
+                        </mat-grid-list>
                     </mat-card>
                 </div>   
             </mat-tab>

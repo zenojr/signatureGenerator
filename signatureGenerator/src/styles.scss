@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+html, body {
+    font-family: 'Muli', sans-serif, 'Verdana', sans-serif;
+    height: 100%;
     margin: 0px;
-}
+  }
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";

@@ -1,3 +1,7 @@
+html{
+    font-family: 'Muli', sans-serif, 'Verdana', sans-serif;
+}
+
 %flex-center  { width:   100%; 
                 display: flex;}
 
@@ -15,18 +19,60 @@
 height: 48px;    
 }
 
+.logoSignature img {
+    width: 306px;
+}
+
 .itens {
     @extend %adjust-itens;
 }
 
 .signature-card {
-       max-width: 400px;
+       max-width: 650px;
      margin-left: auto;
     margin-right: auto;
       margin-top: 15px;
+      margin-bottom: 15px;
   }
   
 .header-image {
     background-image: url('../../assets/img/logoCorfio2019.png');
      background-size: cover;
+}
+
+mat-grid-tile {
+    background: white;
+}
+
+.text-data{
+    text-align: left;
+}
+
+.signature {
+    color: gray;
+    font-family: 'Muli', 'Verdana', sans-serif;
+    margin-top: 50px;
+    margin-right: 70px;
+    margin-right: 120px;
+}
+
+.contact {
+    color: gray;
+    font-weight: normal;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+
+.contact p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.signature h3, h4 {
+    margin: 2px;
+}
+
+#phone {
+    font-weight: 700;
 }
