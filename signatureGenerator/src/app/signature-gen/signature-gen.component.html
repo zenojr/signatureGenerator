@@ -1,2 +1,31 @@
-<h1>Gerador de assinaturas Corfio</h1>
-<button mat-button>Click me!</button>
+<div class = "principalContainer">
+    <img class = "logoPrincipal" 
+           src = "../../assets/img/logoCorfio2019.png" 
+           alt = "Corfio">
+    <div class = "menu">
+        <mat-tab-group dynamicHeight 
+                       animationDuration = "200ms" 
+                       color = "accent" 
+                       backgroundColor = "primary">
+            <mat-tab label = "Assinatura"> 
+                <ng-template mat-tab-label>
+                    <svg xmlns   = "http://www.w3.org/2000/svg" 
+                         width   = "24" 
+                         height  = "24" 
+                         viewBox = "0 0 24 24">
+                         <path d = "M2.5 4v3h5v12h3V7h5V4h-13zm19 5h-9v3h3v7h3v-7h3V9z"/>
+                    </svg>
+                    Assinatura
+                </ng-template> 
+                <div class = "itens">
+                    <mat-card class="signature-card">
+                        
+
+
+                    </mat-card>
+                </div>   
+            </mat-tab>
+        </mat-tab-group>    
+    </div>
+    </div>
+    

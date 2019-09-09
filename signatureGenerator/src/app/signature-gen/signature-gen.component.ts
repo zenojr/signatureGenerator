@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'signature-gen',
+  selector: 'app-signature-gen',
   templateUrl: './signature-gen.component.html',
   styleUrls: ['./signature-gen.component.scss']
 })
