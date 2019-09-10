@@ -18,7 +18,7 @@
                     Assinatura
                 </ng-template> 
                 <div class = "itens">
-                    <mat-card class="signature-card">
+                    <div class="signature-card">
                         <mat-grid-list cols="4" rowHeight="4:3">
                             <mat-grid-tile colspan="2" rowspan="2">
                                 <div class="logoSignature">
@@ -41,27 +41,35 @@
                                 </mat-grid-tile>
                             </div>                            
                         </mat-grid-list>
-                    </mat-card>
+                    </div>
 
-                    <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="nome" matInput placeholder="Nome" value="">
-                    </mat-form-field>
-
-                    <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="cargo" matInput placeholder="Cargo" value="">
-                    </mat-form-field>
-                    <br>
-                    <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="phone" matInput placeholder="Fone" value="">
-                    </mat-form-field>
-
-                    <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="site" matInput placeholder="Site" value="">
-                    </mat-form-field>
+                    <div class="form">
+                            <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="nome" matInput placeholder="Nome" value="">
+                            </mat-form-field>
+        
+                            <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="cargo" matInput placeholder="Cargo" value="">
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="phone" matInput placeholder="Fone" value="">
+                            </mat-form-field>
+        
+                            <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="site" matInput placeholder="Site" value="">
+                            </mat-form-field>
+                    </div>
+                    
 
                 </div>   
             </mat-tab>
         </mat-tab-group>    
     </div>
     </div>
+
+    <div id="capture" style="padding: 10px; background: #f5da55">
+            <h4 style="color: #000; ">Hello world!</h4>
+    </div>
+    <button (click)="capture()" >Capture</button>
     

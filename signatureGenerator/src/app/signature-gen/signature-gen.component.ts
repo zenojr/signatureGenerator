@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-signature-gen',
@@ -7,14 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignatureGenComponent implements OnInit {
 
-  nome  = 'Informe nome';
-  cargo = 'Cargo';
+  nome: string;
+  cargo: string;
   phone: number;
   site  = 'www.corfio.com.br';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  capture() {
+    html2canvas(document.querySelector('#capture')).then(canvas => {
+      document.body.appendChild(canvas);
+  });
   }
 
 }
