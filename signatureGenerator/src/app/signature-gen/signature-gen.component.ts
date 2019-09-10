@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignatureGenComponent implements OnInit {
 
+  nome  = 'Informe nome';
+  cargo = 'Cargo';
+  phone: number;
+  site  = 'www.corfio.com.br';
+
   constructor() { }
 
   ngOnInit() {

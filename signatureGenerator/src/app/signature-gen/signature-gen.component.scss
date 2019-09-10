@@ -53,13 +53,13 @@ mat-grid-tile {
     font-family: 'Muli', 'Verdana', sans-serif;
     margin-top: 50px;
     margin-right: 70px;
-    margin-right: 120px;
+    margin-right: 40%;
 }
 
 .contact {
     color: gray;
     font-weight: normal;
-    margin-right: 120px;
+    margin-right: 40%;
     margin-bottom: 50px;
 }
 
@@ -75,4 +75,8 @@ mat-grid-tile {
 
 #phone {
     font-weight: 700;
+}
+
+mat-form-field {
+    margin-left: 10px;
 }
