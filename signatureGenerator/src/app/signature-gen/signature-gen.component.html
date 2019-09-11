@@ -35,7 +35,7 @@
         
                                 <mat-grid-tile colspan="2" rowspan="1">
                                     <div class="contact">
-                                        <p id="phone">+ {{ phone }}</p>
+                                        <p id="phone">+55 {{ phone }}</p>
                                         <p> {{ site }} </p>
                                     </div>
                                 </mat-grid-tile>
@@ -60,7 +60,8 @@
                         <br>
                         <mat-form-field class="example-full-width">
                             <input [(ngModel)]="phone" 
-                                   matInput placeholder="Fone" 
+                                   matInput placeholder="Fone"
+                                   type="number" 
                                    onfocus="this.value=''"
                                    autocomplete="off">
                         </mat-form-field>
@@ -78,10 +79,11 @@
         </mat-tab-group>
         <div class="container-actions">
             <div class="actions">
-                <button mat-raised-button (click)="capture()" > Gerar Assinatura </button>    
+                <button color="primary" mat-raised-button (click)="capture()" > Gerar Assinatura </button>    
+                <button *ngIf="htmlSaida != ''" color="accent" mat-raised-button (click)="copy(htmlSaida)" > Copiar </button>
             </div>
-            <br>
-            <div class="htmlSaida">
+            
+            <div class="htmlSaida" #htmlRendered.value >
                 {{htmlSaida}}
             </div>
         </div>

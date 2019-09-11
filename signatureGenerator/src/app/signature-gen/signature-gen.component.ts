@@ -20,7 +20,19 @@ export class SignatureGenComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  copy(data: string) {
+    const selBox = document.createElement('textarea');
+    selBox.style.position = 'fixed';
+    selBox.style.left = '0';
+    selBox.style.top = '0';
+    selBox.style.opacity = '0';
+    selBox.value = data;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
+  }
 
   capture() {
 
@@ -29,20 +41,28 @@ export class SignatureGenComponent implements OnInit {
     //                       document.body.appendChild(canvas);
     //            });
 
+  if ( this.nome !== 'Nome' ) {
 
-  this.htmlSaida = `<HTML><HEAD><link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    this.htmlSaida = `<HTML><HEAD>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <style>
+
+      p {
+        font-family: Muli, Verdana, sans-serif;
+      }
+    </style>
   </HEAD>
   <TABLE cellSpacing=0 width=650 border=0 cellPadding=0 style="font-family: 'Verdana', sans-serif; color: rgb(117,120,123); word-spacing: 0; text-transform: none; letter-spacing: normal; text-indent: 0; line-height: 18px;">
   <TBODY>
       <TR>
-          <TD vAlign=center rowSpan=5 width=300 align=center><A href="http://www.corfio.com.br/"><IMG border=0 src="https://i.imgur.com/6q5vKF8.png" width=300></A></TD>
+          <TD vAlign=center rowSpan=5 width=300 height=175 align=center><A href="http://www.corfio.com.br/"><IMG border=0 src="https://i.imgur.com/6q5vKF8.png" width=300 height=175 ></A></TD>
           <TD>
               <TABLE cellSpacing=0 cellPadding=30>
                   <TBODY>
                       <TR><TD><FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 18px; FONT-WEIGHT: bold;  color: rgb(117,120,123);">` + this.nome + `</FONT><br>
                           <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: normal; color: rgb(117,120,123);"> ` + this.cargo + ` </FONT><br><br>
-                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 18px; FONT-WEIGHT: normal; color: rgb(117,120,123);"> ` + this.phone + ` </FONT><br>
-                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: normal; color: rgb(117,120,123);">` + this.site + `</FONT>
+                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 18px; FONT-WEIGHT: normal; color: rgb(117,120,123);"> +55  ` + this.phone + ` </FONT><br>
+                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none">` + this.site + `</FONT>
                       </TD></TR>
                   </TBODY>
               </TABLE>
@@ -52,6 +72,10 @@ export class SignatureGenComponent implements OnInit {
   </BODY>
   </HTML>
   `;
+
+  } else {
+    alert('Favor preencher os campos da assinatura');
+  }
 
   }
 
