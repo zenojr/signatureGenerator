@@ -28,8 +28,8 @@
                             <div class="text-data">
                                 <mat-grid-tile class="" colspan="2" rowspan="1">
                                     <div class="signature">
-                                        <h3>{{ nome }}.</h3>
-                                        <p> {{ cargo }} </p>
+                                        <h3>{{ nome }}</h3>
+                                         <p>{{ cargo }}</p>
                                     </div>
                                 </mat-grid-tile>
         
@@ -44,32 +44,50 @@
                     </div>
 
                     <div class="form">
-                            <mat-form-field class="example-full-width">
-                                    <input [(ngModel)]="nome" matInput placeholder="Nome" value="">
-                            </mat-form-field>
-        
-                            <mat-form-field class="example-full-width">
-                                    <input [(ngModel)]="cargo" matInput placeholder="Cargo" value="">
-                            </mat-form-field>
-                            <br>
-                            <mat-form-field class="example-full-width">
-                                    <input [(ngModel)]="phone" matInput placeholder="Fone" value="">
-                            </mat-form-field>
-        
-                            <mat-form-field class="example-full-width">
-                                    <input [(ngModel)]="site" matInput placeholder="Site" value="">
-                            </mat-form-field>
-                    </div>
+                        <mat-form-field class="example-full-width">
+                            <input [(ngModel)]="nome" 
+                                   matInput placeholder="Nome" 
+                                   onfocus="this.value=''"
+                                   autocomplete="off">
+                        </mat-form-field>
+    
+                        <mat-form-field class="example-full-width">
+                            <input [(ngModel)]="cargo" 
+                                   matInput placeholder="Departamento" 
+                                   onfocus="this.value=''"
+                                   autocomplete="off">
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field class="example-full-width">
+                            <input [(ngModel)]="phone" 
+                                   matInput placeholder="Fone" 
+                                   onfocus="this.value=''"
+                                   autocomplete="off">
+                        </mat-form-field>
+    
+                        <!-- <mat-form-field class="example-full-width">
+                            <input [(ngModel)]="site" 
+                                   matInput placeholder="Site" 
+                                   value="">
+                        </mat-form-field> -->
                     
-
+                    </div>
                 </div>   
             </mat-tab>
-        </mat-tab-group>    
+            
+        </mat-tab-group>
+        <div class="container-actions">
+            <div class="actions">
+                <button mat-raised-button (click)="capture()" > Gerar Assinatura </button>    
+            </div>
+            <br>
+            <div class="htmlSaida">
+                {{htmlSaida}}
+            </div>
+        </div>
     </div>
     </div>
-
-    <div id="capture" style="padding: 10px; background: #f5da55">
-            <h4 style="color: #000; ">Hello world!</h4>
-    </div>
-    <button (click)="capture()" >Capture</button>
+        
     
+    
+

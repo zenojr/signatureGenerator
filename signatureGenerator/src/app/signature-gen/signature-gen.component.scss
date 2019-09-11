@@ -56,15 +56,27 @@ mat-grid-tile {
     
 }
 
-.signature {
-    
+.container-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.htmlSaida {
+    width: 500px;
+}
+
+.signature {    
     color: gray;
     font-family: 'Muli', 'Verdana', sans-serif;
     margin-top: 50px;
 }
 
 .signature p {
-    text-align: left;
+    margin: 0px;
+
 }
 
 .contact {
