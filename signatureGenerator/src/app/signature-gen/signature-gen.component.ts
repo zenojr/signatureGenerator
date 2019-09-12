@@ -55,7 +55,7 @@ export class SignatureGenComponent implements OnInit {
   <table cellSpacing=0 width=650 border=0 cellPadding=0 style="font-family: 'Verdana', sans-serif; color: rgb(117,120,123); word-spacing: 0; text-transform: none; letter-spacing: normal; text-indent: 0; line-height: 18px;">
   <tbody>
       <tr>
-          <td vAlign=center rowSpan=5 width=300 height=175 align=center><A href="http://www.corfio.com.br/"><IMG border=0 src="https://i.imgur.com/6q5vKF8.png" width=300 height=175 ></A></td>
+          <td vAlign=center rowSpan=5 width=300 height=175 align=center><A href="http://www.corfio.com.br/"><IMG border=0 src="https://www.corfio.com.br/image/logo_assinatura.png" width=300 height=175 ></A></td>
           <td>
               <table cellSpacing=0 cellPadding=30>
                   <tbody>
