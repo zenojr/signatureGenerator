@@ -43,34 +43,34 @@ export class SignatureGenComponent implements OnInit {
 
   if ( this.nome !== 'Nome' ) {
 
-    this.htmlSaida = `<HTML><HEAD>
+    this.htmlSaida = `<html><head>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <style>
-
-      p {
+      body {
         font-family: Muli, Verdana, sans-serif;
       }
     </style>
-  </HEAD>
-  <TABLE cellSpacing=0 width=650 border=0 cellPadding=0 style="font-family: 'Verdana', sans-serif; color: rgb(117,120,123); word-spacing: 0; text-transform: none; letter-spacing: normal; text-indent: 0; line-height: 18px;">
-  <TBODY>
-      <TR>
-          <TD vAlign=center rowSpan=5 width=300 height=175 align=center><A href="http://www.corfio.com.br/"><IMG border=0 src="https://i.imgur.com/6q5vKF8.png" width=300 height=175 ></A></TD>
-          <TD>
-              <TABLE cellSpacing=0 cellPadding=30>
-                  <TBODY>
-                      <TR><TD><FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 18px; FONT-WEIGHT: bold;  color: rgb(117,120,123);">` + this.nome + `</FONT><br>
-                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: normal; color: rgb(117,120,123);"> ` + this.cargo + ` </FONT><br><br>
-                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 18px; FONT-WEIGHT: normal; color: rgb(117,120,123);"> +55  ` + this.phone + ` </FONT><br>
-                          <FONT style="font-family: 'Verdana', sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none">` + this.site + `</FONT>
-                      </TD></TR>
-                  </TBODY>
-              </TABLE>
-          </TD>
-      </TR>
-  </TBODY></TABLE>
-  </BODY>
-  </HTML>
+  </head>
+  <body>
+  <table cellSpacing=0 width=650 border=0 cellPadding=0 style="font-family: 'Verdana', sans-serif; color: rgb(117,120,123); word-spacing: 0; text-transform: none; letter-spacing: normal; text-indent: 0; line-height: 18px;">
+  <tbody>
+      <tr>
+          <td vAlign=center rowSpan=5 width=300 height=175 align=center><A href="http://www.corfio.com.br/"><IMG border=0 src="https://i.imgur.com/6q5vKF8.png" width=300 height=175 ></A></td>
+          <td>
+              <table cellSpacing=0 cellPadding=30>
+                  <tbody>
+                      <tr><td><font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: bold;  color: rgb(117,120,123);">` + this.nome + `</font><br>
+                          <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123);"> ` + this.cargo + ` </font><br><br>
+                          <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55  ` + this.phone + ` </font><br>
+                          <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none">` + this.site + `</font>
+                      </td></tr>
+                  </tbody>
+              </table>
+          </td>
+      </tr>
+  </tbody></table>
+  </body>
+  </html>
   `;
 
   } else {
