@@ -18,74 +18,101 @@
                     Assinatura
                 </ng-template> 
                 <div class = "itens">
+
+                        <div class="form">
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="nome" 
+                                           matInput placeholder="Nome" 
+                                           onfocus="this.value=''"
+                                           
+                                           autocomplete="off">
+                                </mat-form-field>
+            
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="cargo" 
+                                           matInput placeholder="Departamento" 
+                                           onfocus="this.value=''"
+                                           autocomplete="off">
+                                </mat-form-field>
+                                <br>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="phone" 
+                                           matInput placeholder="Fone"
+                                           onfocus="this.value=''"
+                                           autocomplete="off">
+                                </mat-form-field>
+
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="phone2" 
+                                           matInput placeholder="Fone2"
+                                           onfocus="this.value=''"
+                                           autocomplete="off">
+                                </mat-form-field>
+                                <br>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="skype" 
+                                           matInput placeholder="Skype"
+                                           onfocus="this.value=''"
+                                           autocomplete="off">
+                                </mat-form-field>
+            
+                                <!-- <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="site" 
+                                           matInput placeholder="Site" 
+                                           value="">
+                                </mat-form-field> -->
+                            
+                            </div>
+
                     <div class="signature-card">
-                        <mat-grid-list cols="4" rowHeight="4:3">
-                            <mat-grid-tile colspan="2" rowspan="2">
-                                <div class="logoSignature">
-                                    <img src="https://www.corfio.com.br/image/logo_assinatura.png" alt="">
-                                </div>
-                            </mat-grid-tile>
-                            <div class="text-data">
-                                <mat-grid-tile class="" colspan="2" rowspan="1">
-                                    <div class="signature">
-                                        <h3>{{ nome }}</h3>
-                                         <p>{{ cargo }}</p>
-                                    </div>
-                                </mat-grid-tile>
-        
-                                <mat-grid-tile colspan="2" rowspan="1">
-                                    <div class="contact">
-                                        <p id="phone">+55 {{ phone }}</p>
-                                        <p> {{ site }} </p>
-                                    </div>
-                                </mat-grid-tile>
-                            </div>                            
-                        </mat-grid-list>
+                            <html>
+                                    <head>
+                                    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+                                    <style>
+                                      body {
+                                        font-family: Muli, Verdana, sans-serif;
+                                      }
+                                    </style>
+                                  </head>
+                                  <body>
+                                  <table cellSpacing=0 width=650 border=0 cellPadding=0 style="font-family: 'Verdana', sans-serif; color: rgb(117,120,123); word-spacing: 0; text-transform: none; letter-spacing: normal; text-indent: 0; line-height: 18px;">
+                                  <tbody>
+                                      <tr>
+                                          <td vAlign=center rowSpan=5 width=300 height=175 align=center><a href="http://www.corfio.com.br/"><img border=0 src="https://www.corfio.com.br/image/logo_assinatura.png" width=300 height=175 ></a></td>
+                                          <td>
+                                              <table cellSpacing=0 cellPadding=30>
+                                                  <tbody>
+                                                      <tr><td><font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: bold;  color: rgb(117,120,123);"> {{ nome }} </font><br>
+                                                          <div *ngIf="cargo != ''" >  <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ cargo }} </font><br><br> </div>
+                                                          <font *ngIf="phone != ''" style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55  {{ phone }} </font><br>
+                                                          <font *ngIf="phone2 != ''" style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55  {{ phone2 }} </font><br>
+                                                          <font *ngIf="skype != ''" style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> skype:  {{ skype }} </font><br>
+                                                          <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none"> {{ site }} </font>
+                                                      </td></tr>
+                                                  </tbody>
+                                              </table>
+                                          </td>
+                                      </tr>
+                                  </tbody></table>
+                                  </body>
+                                </html>
                     </div>
 
-                    <div class="form">
-                        <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="nome" 
-                                   matInput placeholder="Nome" 
-                                   onfocus="this.value=''"
-                                   autocomplete="off">
-                        </mat-form-field>
-    
-                        <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="cargo" 
-                                   matInput placeholder="Departamento" 
-                                   onfocus="this.value=''"
-                                   autocomplete="off">
-                        </mat-form-field>
-                        <br>
-                        <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="phone" 
-                                   matInput placeholder="Fone"
-                                   onfocus="this.value=''"
-                                   autocomplete="off">
-                        </mat-form-field>
-    
-                        <!-- <mat-form-field class="example-full-width">
-                            <input [(ngModel)]="site" 
-                                   matInput placeholder="Site" 
-                                   value="">
-                        </mat-form-field> -->
-                    
-                    </div>
+
                 </div>   
             </mat-tab>
             
         </mat-tab-group>
-        <div class="container-actions">
+        <!-- <div class="container-actions">
             <div class="actions">
                 <button color="primary" mat-raised-button (click)="capture()" > Gerar Assinatura </button>    
                 <button *ngIf="htmlSaida != ''" color="accent" mat-raised-button (click)="copy(htmlSaida)" > Copiar </button>
             </div>
             
             <div class="htmlSaida">
-                {{htmlSaida}}
+                
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
 

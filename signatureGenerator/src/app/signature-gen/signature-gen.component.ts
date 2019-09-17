@@ -9,8 +9,10 @@ import html2canvas from 'html2canvas';
 export class SignatureGenComponent implements OnInit {
 
   nome = 'Nome';
-  cargo = 'Departamento';
-  phone = '49 9999999';
+  cargo = '';
+  phone = '';
+  phone2 = '';
+  skype = '';
   site  = 'www.corfio.com.br';
   cardFinal = '';
   htmlSaida = '';
@@ -18,6 +20,11 @@ export class SignatureGenComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  clearForm() {
+    this.nome = null;
   }
 
   copy(data: string) {

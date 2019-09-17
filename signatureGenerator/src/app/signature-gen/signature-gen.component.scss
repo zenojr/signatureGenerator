@@ -36,15 +36,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .itens {
-    
+    display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
+
+
 .signature-card {
-       max-width: 650px;
-     margin-left: 350px;
-     padding-left: 50px;
-      margin-top: 15px;
-   margin-bottom: 15px;
+         max-width: 600px;
+      padding-left: 40px;
+        margin-top: 15px;
+     margin-bottom: 15px;
+            border: 1px solid gray;
   }
   
 .header-image {
@@ -57,9 +61,7 @@ mat-grid-tile {
 }
 
 .form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .actions button {
