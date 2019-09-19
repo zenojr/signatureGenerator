@@ -1,6 +1,6 @@
 <div class = "principalContainer">
     <img class = "logoPrincipal" 
-           src = "https://www.corfio.com.br/image/logo_assinatura_sembarra.png" 
+           src = "../../assets/img/logoCorfio2019.png" 
            alt = "Corfio">
     <div class = "menu">
         <mat-tab-group dynamicHeight 
@@ -18,7 +18,8 @@
                     Assinatura
                 </ng-template> 
                 <div class = "itens">
-                        <div class="form" id="form">
+
+                        <div class="form">
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="nome" 
                                            matInput placeholder="Nome" 
@@ -39,13 +40,15 @@
 
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="phone2" 
-                                           matInput placeholder="Fone2"                                           
+                                           matInput placeholder="Fone2"
+                                           
                                            autocomplete="off">
                                 </mat-form-field>
                                 <br>
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="skype" 
-                                           matInput placeholder="Skype"                                           
+                                           matInput placeholder="Skype"
+                                           
                                            autocomplete="off">
                                 </mat-form-field>
             
@@ -58,59 +61,59 @@
                             </div>
 
                     <div>
-                        <!DOCTYPE html>
-                        <html>
-                        <head>
-                            <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-                            <style>
-                                body {
-                                font-family: Muli, Verdana, sans-serif;
-                                }
-                            </style>
-                        </head>
-                        <body>
-                        <table width=650 heigth=175 cellSpacing=0 cellPadding=1>
-                            <tr>
-                                <td width=300 heigth=175> 
-                                    <a href="http://www.corfio.com.br"><img width=300 src="../../assets/img/logo_assinatura_sembarra.png" alt=""></a>
-                                </td>
-                                <td width=2 heigth=4 style="background-color: rgb(117,120,123)">
-                                    
-                                </td>
-                                <td width=300 height=175 style="padding-left: 25px">
-                                    
-                                <div style="height: 150px; font-family: Verdana, Geneva, Tahoma, sans-serif">
-                                    <div style="padding-top: 0px">
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: bold; color: rgb(117,120,123);"> {{ nome }} </font>
-                                        <div *ngIf="cargo != ''">
-                                            <font  style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ cargo }} </font>
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+                                <style>
+                                    body {
+                                    font-family: Muli, Verdana, sans-serif;
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                            <table width=650 heigth=175 cellSpacing=0 cellPadding=1>
+                                <tr>
+                                    <td width=300 heigth=175> 
+                                        <a href="http://www.corfio.com.br"> <img width=300 src="https://www.corfio.com.br/image/logo_assinatura_sembarra.png" alt="">  </a>
+                                    </td>
+                                    <td width=2 heigth=4 style="background-color: rgb(117,120,123)">
+                                        
+                                    </td>
+                                    <td width=300 height=175 style="padding-left: 25px">
+                                        
+                                    <div style="height: 150px; font-family: Verdana, Geneva, Tahoma, sans-serif">
+                                        <div style="padding-top: 5px">
+                                                <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: bold; color: rgb(117,120,123);"> {{ nome }} </font>
+                                            <div *ngIf="cargo != ''">
+                                                <font  style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ cargo }} </font>
+                                            </div>    
+                                        </div>
+                                        <br>
+                                        <div style="margin-top: 0px;">
+                                            <div *ngIf="phone != ''">
+                                                <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55 {{ phone }} </font><br>
+                                            </div>
+                                            <div *ngIf="phone2 != ''">
+                                                <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55 {{ phone2 }} </font><br>
+                                            </div>  
+                                            <div *ngIf="skype != ''" >
+                                                <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> skype:  {{ skype }} </font><br>
+                                            </div>
+                                            <div>
+                                                <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none"> {{ site }} </font>
+                                            </div>
+                                                
+                                                
                                         </div>    
-                                    </div>
-                                    <br>
-                                    <div style="margin-top: 0px;">
-                                        <div *ngIf="phone != ''">
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55 {{ phone }} </font><br>
-                                        </div>
-                                        <div *ngIf="phone2 != ''">
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55 {{ phone2 }} </font><br>
-                                        </div>  
-                                        <div *ngIf="skype != ''" >
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> skype:  {{ skype }} </font><br>
-                                        </div>
-                                        <div>
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none"> {{ site }} </font>
-                                        </div>
-                                            
-                                            
-                                    </div>    
-                                    
-                                </div>     
-                                </td>
-                            </tr>
-                        </table>
-                        
-                        </body>
-                        </html>
+                                        
+                                    </div>     
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            </body>
+                            </html>
                     </div>
 
 
