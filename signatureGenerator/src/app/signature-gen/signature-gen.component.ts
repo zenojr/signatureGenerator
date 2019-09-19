@@ -10,7 +10,7 @@ export class SignatureGenComponent implements OnInit {
 
   nome = 'Nome';
   cargo = '';
-  phone = '';
+  phone = [''];
   phone1Area = '';
   phone2 = '';
   skype = '';
@@ -24,7 +24,20 @@ export class SignatureGenComponent implements OnInit {
   }
 
   addPhone() {
-    
+    // var para = document.createElement("p");
+    // var node = document.createTextNode("This is new.");
+    // para.appendChild(node);
+
+    // var element = document.getElementById("div1");
+    // element.appendChild(para);
+
+    let button = document.createElement('p');
+    let node = document.createTextNode('this update another ??');
+    button.appendChild(node);
+
+    let elementTorecieve = document.getElementById('form');
+    elementTorecieve.appendChild(button);
+
   }
 
   clearForm() {

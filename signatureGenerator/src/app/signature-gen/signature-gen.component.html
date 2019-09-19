@@ -1,6 +1,6 @@
 <div class = "principalContainer">
     <img class = "logoPrincipal" 
-           src = "../../assets/img/logoCorfio2019.png" 
+           src = "https://www.corfio.com.br/image/logo_assinatura_sembarra.png" 
            alt = "Corfio">
     <div class = "menu">
         <mat-tab-group dynamicHeight 
@@ -18,7 +18,7 @@
                     Assinatura
                 </ng-template> 
                 <div class = "itens">
-                        <div class="form">
+                        <div class="form" id="form">
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="nome" 
                                            matInput placeholder="Nome" 
@@ -36,13 +36,12 @@
                                            matInput placeholder="Fone1"
                                            autocomplete="off">
                                 </mat-form-field>
-                                <button mat-mini-fab color="primary">+</button>
 
-                                <!-- <mat-form-field class="example-full-width">
+                                <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="phone2" 
                                            matInput placeholder="Fone2"                                           
                                            autocomplete="off">
-                                </mat-form-field> -->
+                                </mat-form-field>
                                 <br>
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="skype" 
