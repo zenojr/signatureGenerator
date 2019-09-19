@@ -17,8 +17,12 @@
                     </svg>
                     Assinatura
                 </ng-template> 
+                <div class="info">
+                    <h3>Gerador de assinaturas</h3>
+                    <h4>Por favor preencha o formulário selecione e copie a assinatura para utilizar</h4>
+                </div>
+                
                 <div class = "itens">
-
                         <div class="form">
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="nome" 
@@ -60,7 +64,7 @@
                             
                             </div>
 
-                    <div>
+                    <div class="assinatura">
                             <!DOCTYPE html>
                             <html>
                             <head>
@@ -102,9 +106,7 @@
                                             </div>
                                             <div>
                                                 <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none"> {{ site }} </font>
-                                            </div>
-                                                
-                                                
+                                            </div>                                                                                                
                                         </div>    
                                         
                                     </div>     
@@ -115,8 +117,6 @@
                             </body>
                             </html>
                     </div>
-
-
                 </div>   
             </mat-tab>
             
