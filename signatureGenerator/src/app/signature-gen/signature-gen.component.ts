@@ -10,7 +10,7 @@ export class SignatureGenComponent implements OnInit {
 
   nome = 'Nome';
   cargo = '';
-  phone = [''];
+  phone = '';
   phone1Area = '';
   phone2 = '';
   skype = '';
