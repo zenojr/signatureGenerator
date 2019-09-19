@@ -23,6 +23,9 @@ export class SignatureGenComponent implements OnInit {
   ngOnInit() {
   }
 
+  addPhone() {
+    
+  }
 
   clearForm() {
     this.nome = null;
