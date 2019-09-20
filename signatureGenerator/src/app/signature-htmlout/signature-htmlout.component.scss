@@ -1,0 +1,130 @@
+html{
+    font-family: 'Muli', sans-serif, 'Verdana', sans-serif;
+}
+
+
+%flex-center  { width:   100%; 
+                display: flex;
+                justify-content: center;}
+
+%adjust-itens { margin-right: 15%; }               
+
+.principalContainer {
+    @extend %flex-center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.info {
+    text-align: center;
+    color: gray;
+    font-family: 'Muli', sans-serif, 'Verdana', sans-serif;
+}
+
+.menu {
+    width: 100%;
+}
+
+.logoPrincipal {    
+    height: 48px;    
+}
+
+
+
+.logoSignature img {
+    float: right;
+    margin-right: 20px;
+    width: 90%;
+}
+
+.itens {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+.signature-card {
+         max-width: 600px;
+      padding-left: 40px;
+        margin-top: 15px;
+     margin-bottom: 15px;
+            border: 0px solid gray;
+  }
+  
+.header-image {
+    background-image: url('../../assets/img/logoCorfio2019.png');
+     background-size: cover;
+}
+
+mat-grid-tile {
+    background: white;
+}
+
+.form {
+    margin: 10px;
+}
+
+.actions button {
+    margin: 10px;
+}
+
+.container-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.htmlSaida {
+    width: 500px;
+    margin-top: 10px;
+}
+
+.signature {    
+    color: gray;
+    font-family: 'Muli', 'Verdana', sans-serif;
+    margin-top: 50px;
+}
+
+.signature p {
+    margin: 0px;
+
+}
+
+.contact {
+    color: gray;
+    font-weight: normal;
+    // margin-right: 20px;
+    // margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.contact p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.signature h3, h4 {
+    margin: 2px;
+}
+
+#phone {
+    font-weight: 700;
+}
+
+mat-form-field {
+    margin-left: 10px;
+}
+
+.assinatura {
+    border: 1px dashed gray;
+    padding: 10px;
+}

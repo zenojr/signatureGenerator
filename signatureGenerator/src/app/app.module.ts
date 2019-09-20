@@ -7,11 +7,13 @@ import { SignatureGenComponent } from './signature-gen/signature-gen.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { SignatureHtmloutComponent } from './signature-htmlout/signature-htmlout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignatureGenComponent
+    SignatureGenComponent,
+    SignatureHtmloutComponent
   ],
   imports: [
     BrowserModule,
