@@ -51,7 +51,7 @@
                                 <br>
                                 <mat-form-field class="example-full-width">
                                     <input [(ngModel)]="skype" 
-                                           matInput placeholder="Skype"
+                                           matInput placeholder="Contato Secundário"
                                            
                                            autocomplete="off">
                                 </mat-form-field>
@@ -76,51 +76,39 @@
                     </style>
                 </head>
                 <body>
-                    <div style="width: 650; height: 175">
-                        <table width=550 heigth=175 cellSpacing=0 cellPadding=1>
-                            <tr>
-                                <td width=150 heigth=175> 
+                    <table>
+                        <tr>
+                            <td rowspan=2> 
                                     <a href="http://www.corfio.com.br"> 
                                         <img style="padding-left: 10px;" width=150 src="https://www.corfio.com.br/image/logo_assinatura_sembarra.png" alt="Corfio">
                                     </a>
-                                </td>
+                             </td>
 
-                                <td  style=" width: 2px; height: 125px; background-color: rgb(117,120,123)"></td>
-                                
-                                <td width=300 height=125 style="padding-left: 25px">
-                                    
-                                <div style=" width: 200px; height: 150px; font-family:'Muli', 'Verdana', Geneva, Tahoma, sans-serif">
-                                        
-                                    <div style="height: 30px; padding-top: 15px">
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: bold; color: rgb(117,120,123);"> {{ nome }} </font>
-                                        <div *ngIf="cargo != ''">
-                                            <font  style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ cargo }} </font>
-                                        </div>    
-                                    </div>
-                                        
-                                    
-                                    <div style="height: 60px; margin-top: 10px;">
-                                        <div *ngIf="phone != ''">
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55 {{ phone }} </font><br>
-                                        </div>
-                                        <div *ngIf="phone2 != ''">
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55 {{ phone2 }} </font><br>
-                                        </div>  
-                                        <div *ngIf="skype != ''" >
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> skype:  {{ skype }} </font><br>
-                                        </div>
-                                        
-                                    </div>   
-                                    <div style="height: 10px;">
-                                        <div>
-                                            <font style="font-family: 'Muli', 'Verdana', sans-serif; font-SIZE: 10px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none"> {{ site }} </font>
-                                        </div>                                                                                                
-                                    </div>
-                                </div>     
-                                </td>
-                            </tr>
-                        </table>
-                    </div>                    
+                            <td  style=" width: 1px; height: 125px; background-color: rgb(117,120,123)"></td>
+                            <td> 
+                                <table style="margin-left: 10px; width: 250px; height: 120px">
+                                    <tr> 
+                                        <font style="font-family: 'Muli', Verdana, sans-serif; font-SIZE: 14px; font-WEIGHT: bold; color: rgb(117,120,123);"> {{ nome }} </font>                                            
+                                    </tr>
+                                    <tr>
+                                        <font  style="font-family: 'Muli', Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ cargo }} </font>
+                                    </tr>
+                                    <tr>  
+                                        <font style="font-family: 'Muli', Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ phone }} </font>
+                                    </tr>
+                                    <tr>
+                                        <font style="font-family: 'Muli', Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ phone2 }} </font>
+                                    </tr>
+                                    <tr>
+                                        <font style="font-family: 'Muli', Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(117,120,123);"> {{ skype }} </font>
+                                    </tr>
+                                    <tr>
+                                        <font style="font-family: 'Muli', Verdana, sans-serif; font-SIZE: 10px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none"> <a href="http://www.corfio.com.br"> www.corfio.com.br </a></font>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>                    
                 </body>
                 </html>
             </div>
