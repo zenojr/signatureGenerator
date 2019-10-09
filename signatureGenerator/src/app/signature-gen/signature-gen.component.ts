@@ -13,6 +13,7 @@ export class SignatureGenComponent implements OnInit {
   phone = '';
   phone1Area = '';
   phone2 = '';
+  phone3 = '';
   skype = '';
   site  = 'www.corfio.com.br';
   cardFinal = '';
