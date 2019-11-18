@@ -1,5 +1,5 @@
 html{
-    font-family: 'Muli', sans-serif, 'Verdana', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 
@@ -22,7 +22,7 @@ input[type=number]::-webkit-outer-spin-button {
 .info {
     text-align: center;
     color: gray;
-    font-family: 'Muli', sans-serif, 'Verdana', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 .menu {
@@ -89,13 +89,12 @@ mat-grid-tile {
 
 .signature {    
     color: gray;
-    font-family: 'Muli', 'Verdana', sans-serif;
+    font-family:'Verdana', sans-serif;
     margin-top: 50px;
 }
 
 .signature p {
     margin: 0px;
-
 }
 
 .contact {
@@ -109,7 +108,6 @@ mat-grid-tile {
 .contact p {
     margin-top: 0px;
     margin-bottom: 0px;
-    
 }
 
 .signature h3, h4 {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { browser } from 'protractor';
 
 @Component({
   selector: 'app-signature-htmlout',
@@ -21,6 +22,20 @@ export class SignatureHtmloutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  saveAs(html) {
+    let dataToSave = html;
+    this.writeContent(dataToSave, 'Assinatura' + '.htm', 'text/plain');
+  }
+
+  writeContent(content, fileName, contentType) {
+    let a = document.createElement('a');
+    let file = new Blob([content], {type: contentType});
+    
+    a.href = URL.createObjectURL(file);
+    a.download = fileName;
+    a.click();
   }
 
   addPhone() {
