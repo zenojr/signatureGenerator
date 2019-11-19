@@ -11,5 +11,7 @@ PAUSE
 ECHO ===========
 xcopy "Assinatura.htm" "%USERPROFILE%\AppData\Roaming\Microsoft\Signatures"
 xcopy "Assinatura.htm" "%USERPROFILE%\AppData\Roaming\Microsoft\Assinaturas"
+xcopy "Assinatura.htm" "%USERPROFILE%\Application Data\Microsoft\Signatures"
+
 echo Assinatura instalada com sucesso
 pause
