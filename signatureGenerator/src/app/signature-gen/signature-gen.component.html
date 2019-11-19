@@ -128,16 +128,18 @@
             </mat-tab>
             
         </mat-tab-group>
-        <!-- <div class="container-actions">
+        <div class="container-actions">
             <div class="actions">
                 <button color="primary" mat-raised-button (click)="capture()" > Gerar Assinatura </button>    
                 <button *ngIf="htmlSaida != ''" color="accent" mat-raised-button (click)="copy(htmlSaida)" > Copiar </button>
+                <button *ngIf="htmlSaida != ''" color="accent" mat-raised-button (click)="saveAs(htmlSaida)" > Salvar </button>
+                <a href="../../assets/bat/installSignature.bat" download>Instalador</a>
             </div>
             
             <div class="htmlSaida">
                 
             </div>
-        </div> -->
+        </div>
     </div>
     </div>
 

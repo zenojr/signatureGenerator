@@ -8,10 +8,13 @@ ECHO "| |___| |__| | | \ \| |     _| || |__| |"
 ECHO " \_____\____/|_|  \_\_|    |_____\____/ "
 ECHO ===========
 PAUSE
-ECHO ===========
+ECHO =========== 
 xcopy "Assinatura.htm" "%USERPROFILE%\AppData\Roaming\Microsoft\Signatures"
 xcopy "Assinatura.htm" "%USERPROFILE%\AppData\Roaming\Microsoft\Assinaturas"
 xcopy "Assinatura.htm" "%USERPROFILE%\Application Data\Microsoft\Signatures"
+xcopy "Assinatura.htm" "%USERPROFILE%\Application Data\Microsoft\Assinaturas"
+
+
 
 echo Assinatura instalada com sucesso
 pause

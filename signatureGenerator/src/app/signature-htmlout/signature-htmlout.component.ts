@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { browser } from 'protractor';
+
 
 @Component({
   selector: 'app-signature-htmlout',
@@ -7,7 +7,6 @@ import { browser } from 'protractor';
   styleUrls: ['./signature-htmlout.component.scss']
 })
 export class SignatureHtmloutComponent implements OnInit {
-
   
   nome = '';
   cargo = '';
