@@ -24,21 +24,14 @@ export class SignatureGenComponent implements OnInit {
   ngOnInit() {
   }
 
-  saveAs(html) {
-    let dataToSave = html;
-    this.writeContent(dataToSave, 'Assinatura' + '.htm', 'text/plain');
-  }
-
-  writeContent(content, fileName, contentType) {
-    let a = document.createElement('a');
-    let file = new Blob([content], {type: contentType});
-    
-    a.href = URL.createObjectURL(file);
-    a.download = fileName;
-    a.click();
-  }
-
   addPhone() {
+    // var para = document.createElement("p");
+    // var node = document.createTextNode("This is new.");
+    // para.appendChild(node);
+
+    // var element = document.getElementById("div1");
+    // element.appendChild(para);
+
     let button = document.createElement('p');
     let node = document.createTextNode('this update another ??');
     button.appendChild(node);
@@ -67,157 +60,42 @@ export class SignatureGenComponent implements OnInit {
   }
 
   capture() {
+
+    // html2canvas(document.querySelector('.signature-card'))
+    //                     .then(canvas => {
+    //                       document.body.appendChild(canvas);
+    //            });
+
   if ( this.nome !== 'Nome' ) {
 
-    this.htmlSaida = `<!DOCTYPE html>
-    <html>
+    this.htmlSaida = `<html>
     <head>
-        <!-- <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> -->
-        <style>
-            body {
-                font-family: Verdana, sans-serif;
-            }
-            html{
-              font-family: 'Verdana', sans-serif;
-          }
-                              
-          
-          
-          .logoSignature img {
-              float: right;
-              margin-right: 20px;
-              width: 90%;
-          }
-          
-          .itens {
-              display: flex;
-               justify-content: center;
-               align-items: center;
-          }
-          
-          
-          
-          .signature-card {
-                   max-width: 600px;
-                padding-left: 40px;
-                  margin-top: 15px;
-               margin-bottom: 15px;
-                      border: 0px solid gray;
-            }
-            
-          .header-image {
-              background-image: url('../../assets/img/logoCorfio2019.png');
-               background-size: cover;
-          }
-          
-          mat-grid-tile {
-              background: white;
-          }
-          
-          .form {
-              margin: 10px;
-          }
-          
-          .actions button {
-              margin: 10px;
-          }
-          
-          .container-actions {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-          }
-          
-          .htmlSaida {
-              width: 500px;
-              margin-top: 10px;
-          }
-          
-          .signature {    
-              color: gray;
-              font-family:'Verdana', sans-serif;
-              margin-top: 50px;
-          }
-          
-          .signature p {
-              margin: 0px;
-          }
-          
-          .contact {
-              color: gray;
-              font-weight: normal;
-              // margin-right: 20px;
-              // margin-left: 20px;
-              margin-bottom: 50px;
-          }
-          
-          .contact p {
-              margin-top: 0px;
-              margin-bottom: 0px;
-          }
-          
-          .signature h3, h4 {
-              margin: 2px;
-          }
-          
-          #phone {
-              font-weight: 700;
-          }
-          
-          mat-form-field {
-              margin-left: 10px;
-          }
-          
-          .assinatura {
-              border: 1px dashed gray;
-              padding: 10px;
-              width: 500px;
-          }
-        </style>
-    </head>
-    <body>
-        <table style="width: 300px">
-            <tr>
-                <td rowspan=2> 
-                        <a href="http://www.corfio.com.br"> 
-                            <img style="padding-left: 10px;" width=150 src="https://www.corfio.com.br/image/logo_assinatura_sembarra.png" alt="Corfio">
-                        </a>
-                 </td>
-
-                <td  style=" width: 1px; height: 125px; background-color: rgb(117,120,123)"></td>
-                <td> 
-                    <table style="margin-left: 10px; width: 300px; height: 120px">
-                        <tr style="height: 15px;"> 
-                            <font style="font-family: Verdana, sans-serif; font-SIZE: 14px; font-WEIGHT: bold; color: rgb(86, 95, 95);"> `+this.nome+` </font>                                            
-                        </tr>
-                        <tr style="height: 15px;">
-                            <font  style="font-family: Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> `+this.cargo+` </font>
-                        </tr>
-                        <tr style="height: 15px;">  
-                            <font style="font-family: Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> `+ this.phone+` </font>
-                            <div *ngIf="phone2 != ''">
-                                    <font style="font-family: Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> `+ this.phone2+` </font>
-                            </div>
-                            
-                            <div *ngIf="phone3 != ''">
-                                <font style="font-family: Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> `+ this.phone3+`  </font>
-                            </div>
-                        </tr>
-                        
-                        <tr>
-                            <font style="font-family: Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> `+ this.skype+` </font>
-                        </tr>
-                        <tr style="height: 10px;">
-                            <font style="font-family: Verdana, sans-serif; font-SIZE: 10px; font-WEIGHT: normal; color: rgb(86, 95, 95); text-decoration:none"> <a href="http://www.corfio.com.br"> www.corfio.com.br </a></font>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>                    
-    </body>
-    </html>
+    <style type="text/css">
+      body {
+        font-family: Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+  <table cellSpacing=0 width=650 border=0 cellPadding=0 style="font-family: 'Verdana', sans-serif; color: rgb(117,120,123); word-spacing: 0; text-transform: none; letter-spacing: normal; text-indent: 0; line-height: 18px;">
+  <tbody>
+      <tr>
+          <td vAlign=center rowSpan=5 width=300 height=175 align=center><a href="http://www.corfio.com.br/"><img border=0 src="https://www.corfio.com.br/image/logo_assinatura.png" width=300 height=175 ></a></td>
+          <td>
+              <table cellSpacing=0 cellPadding=30>
+                  <tbody>
+                      <tr><td><font style="font-family: 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: bold;  color: rgb(117,120,123);">` + this.nome + `</font><br>
+                          <font style="font-family: 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123);"> ` + this.cargo + ` </font><br><br>
+                          <font style="font-family: 'Verdana', sans-serif; font-SIZE: 18px; font-WEIGHT: normal; color: rgb(117,120,123);"> +55  ` + this.phone + ` </font><br>
+                          <font style="font-family: 'Verdana', sans-serif; font-SIZE: 14px; font-WEIGHT: normal; color: rgb(117,120,123); text-decoration:none">` + this.site + `</font>
+                      </td></tr>
+                  </tbody>
+              </table>
+          </td>
+      </tr>
+  </tbody></table>
+  </body>
+  </html>
   `;
 
   } else {
