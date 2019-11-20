@@ -76,9 +76,12 @@
                     <html>
                     <head>
                         
-                        <style>
+                        <style type="text/css">
+
+                            @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
                             body {
-                                font-family: Verdana, sans-serif;
+                                /* font-family: Muli, Verdana, sans-serif; */
+                                font-family: 'Muli', Verdana, sans-serif;
                             }
                         </style>
                     </head>
@@ -95,27 +98,27 @@
                                 <td> 
                                     <table style="margin-left: 10px; width: 300px; height: 120px">
                                         <tr style="height: 15px;"> 
-                                            <font style="font-family:  Verdana, sans-serif; font-SIZE: 14px; font-WEIGHT: bold; color: rgb(86, 95, 95);"> {{ nome }} </font>                                            
+                                            <font style="font-SIZE: 14px; font-WEIGHT: bold; color: rgb(86, 95, 95);"> {{ nome }} </font>                                            
                                         </tr>
                                         <tr style="height: 15px;">
-                                            <font  style="font-family:  Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ cargo }} </font>
+                                            <font  style="font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ cargo }} </font>
                                         </tr>
                                         <tr style="height: 15px;">  
-                                            <font style="font-family:  Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ phone }} </font>
+                                            <font style="font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ phone }} </font>
                                             <div *ngIf="phone2 != ''">
-                                                    <font style="font-family:  Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ phone2 }} </font>
+                                                    <font style="font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ phone2 }} </font>
                                             </div>
                                             
                                             <div *ngIf="phone3 != ''">
-                                                <font style="font-family:  Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ phone3 }} </font>
+                                                <font style="font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ phone3 }} </font>
                                             </div>
                                         </tr>
                                         
                                         <tr>
-                                            <font style="font-family:  Verdana, sans-serif; font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ skype }} </font>
+                                            <font style="font-SIZE: 12px; font-WEIGHT: normal; color: rgb(86, 95, 95);"> {{ skype }} </font>
                                         </tr>
                                         <tr style="height: 10px;">
-                                            <font style="font-family:  Verdana, sans-serif; font-SIZE: 10px; font-WEIGHT: normal; color: rgb(86, 95, 95); text-decoration:none"> <a href="http://www.corfio.com.br"> www.corfio.com.br </a></font>
+                                            <font style="font-SIZE: 10px; font-WEIGHT: normal; color: rgb(86, 95, 95); text-decoration:none"> <a href="http://www.corfio.com.br"> www.corfio.com.br </a></font>
                                         </tr>
                                     </table>
                                 </td>
